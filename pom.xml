@@ -22,7 +22,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 <version>3.8.1</version> 
 <scope>test</scope> 
 </dependency>
-Kul Thinknyx15:29
+
     <!-- https://mvnrepository.com/artifact/org.eclipse.equinox/javax.servlet --> 
     <dependency> 
 <groupId>javax.servlet</groupId> 
@@ -46,7 +46,7 @@ Kul Thinknyx15:29
             <url>https://maven.pkg.github.com/kmayer10/epsilon</url> 
         </repository> 
     </distributionManagement>
-Kul Thinknyx15:29
+
     <build> 
         <finalName>LiquorShop</finalName> 
         <plugins> 
@@ -69,7 +69,7 @@ Kul Thinknyx15:29
                         </goals> 
                     </execution> 
                 </executions> 
-            </plugin>  !-->           
+            </plugin>  -->           
         </plugins> 
     </build> 
 </project> 
