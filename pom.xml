@@ -60,7 +60,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
                     <port>8081</port> 
                 </configuration> 
             </plugin> 
-            <!--<plugin> 
+            <plugin> 
                 <groupId>org.owasp</groupId> 
                 <artifactId>dependency-check-maven</artifactId> 
                 <version>5.3.2</version> 
@@ -71,7 +71,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
                         </goals> 
                     </execution> 
                 </executions> 
-            </plugin>  -->           
+            </plugin>           
         </plugins> 
     </build> 
 </project> 
