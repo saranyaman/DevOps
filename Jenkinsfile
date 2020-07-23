@@ -11,7 +11,6 @@ pipeline {
             steps{
                 sh label: '', script: 'mvn clean package sonar:sonar'
             }
-        }
     stages {
         stage('Build') {
             steps {
