@@ -6,11 +6,11 @@ pipeline {
         maven "M3"
     }
     
-    stages {
-        stage('sonar'){
-            steps{
-                sh label: '', script: 'mvn clean package sonar:sonar'
-            }
+    stage('Sonar Scan'){  
+       steps{  
+             sh label: '', script: 'mvn clean package sonar:sonar'  
+          }  
+          }
     stages {
         stage('Build') {
             steps {
