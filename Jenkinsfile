@@ -12,17 +12,20 @@ pipeline {
     }
   
     stages {
+       stage('Static Code Scan'){
+       parallel{
        stage('Sonar Scan'){  
        steps{  
              sh label: '', script: 'mvn clean package sonar:sonar'  
           }  
           }
-        
        stage('Dependency'){  
        steps{  
              sh label: '', script: 'mvn clean install'  
           }  
           }
+       }
+       }
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
